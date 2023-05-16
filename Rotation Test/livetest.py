@@ -14,6 +14,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((IP_ADDRESS, PORT))
 print("Connected to Raspberry Pi server... connecting to Mentalab Explore")
 
+currently_on = None
 # Send a command to control the lights, on or off
 def control_lights(enable):
     global currently_on
@@ -21,29 +22,22 @@ def control_lights(enable):
         return
     
     if enable:
-        print(" - turning lights on")
+        print("Turning lights on")
     else:
-        print(" - turning lights off")
+        print("Turning lights off")
     
     message = "ENABLE" if enable else "DISABLE"
     client_socket.send(message.encode())
-
+    
     currently_on = enable
 
 
 def read_data(packet):
     """A function that receives orientation packets and does some operations on the data"""
     timestamp, orn_data = packet.get_data()
-    print("Received an orientation packet: ", orn_data)
-    #############
-    # YOUR CODE #
-    #############
-
-    # print(orn_data)
-    # This is my code! We will be reading the MX data and do thresholding stuff
+    # print("Received an orientation packet: ", orn_data)
     mx = orn_data[6]
-    print(f"MX Data: {mx}")
-    control_lights(mx > 300)
+    control_lights(mx > 330)
 
 
 # Create an Explore object
@@ -60,8 +54,8 @@ exp_device.stream_processor.subscribe(callback=read_data, topic=TOPICS.raw_orn)
 # For ExG:
 # exp_device.stream_processor.subscribe(callback=read_data, topic=TOPICS.raw_ExG)
 
-# Infinite loop to keep the code running
 
+# Infinite loop to keep the code running
 import time
 
 try:
