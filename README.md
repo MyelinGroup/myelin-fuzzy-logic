@@ -27,7 +27,7 @@ After having discussions with CEO of Curia, Alex Milenkovic, who worked with pro
 * Players are invested in the game, so their emotional reaction is much stronger than that of any other stimuli
 * Games are consistent for repeatable trials
 
-That's when we had the idea of developing an “Astrobird” game, which is a customized version of the infamous game “Flappy Bird”, notoriously known for inducing rage in its players.
+That's when we had the idea of developing an "[Astrobird](https://codesandbox.io/s/flappy-bird-forked-h2h00z)" game, which is a customized version of the infamous game “Flappy Bird”, notoriously known for inducing rage in its players.
 
 To collect our data we used Mentalab's Explore EEG recording headset and software. A player wearing the headset would get into a relaxed state and then begin to play the "Astrobird" game for five minutes. To encourage the player's investment in the game we decided to instill stakes so that if they fail to reach a score of 15 they would have to face some sort of punishment. We recorded 15 five-minute trials of a player's EEG waves while they were playing the game. 
 
