@@ -44,7 +44,6 @@ While our research was not as extravagant as we initially planned, this experien
 <sub align="center">This project was completed as a part of the Myelin Hacker House, beginning in April 2023 and concluding in June 2023, and was supported by the 1517 Fund, the Mercatus Center, and Mentalab.</sub>
 
 ---
-## File Structure: 
 ## References:
  Athavipach, C.; Pan-ngum, S.; Israsena, P. A Wearable In-Ear EEG Device for Emotion Monitoring. Sensors 19, (2019),. https://doi.org/10.3390/s19184014 
 
