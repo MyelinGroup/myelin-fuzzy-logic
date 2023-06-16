@@ -1,0 +1,20 @@
+channel_count: 8
+channel_name:
+- Fpz
+- Gnd
+- Fz
+- FCz
+- Cz
+- CPz
+- Pz
+- POz
+sampling_rate: 500
+software_mask:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1

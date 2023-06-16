@@ -1,0 +1,20 @@
+channel_count: 8
+channel_name:
+- AF7
+- FP1
+- FP2
+- AF8
+- O1
+- O2
+- I1
+- I2
+sampling_rate: 500
+software_mask:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
