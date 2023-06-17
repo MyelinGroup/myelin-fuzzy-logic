@@ -36,7 +36,7 @@ To collect our data we used Mentalab's Explore EEG recording headset and softwar
 ## Analysis and Results
 Using the data we collected we analyzed neutral events, 4-second blocks of time during the game, to see how they compared to end events, 4-second blocks of time around when the player would lose a game. After filtering and processing our data we trained seven types of classifiers to see which would perform the best: SVM, Random Forest, Gradient Boosting, KNN, Naïve Bayes, Logistic Regression, and MLP. In the end, our SVM and MLP classifiers would yield the best accuracy with a 94.7% success rate in detecting anger based on a user's EEG waves.
 
-<sub> Here is a look at a singular end event and a singular neutral event.</sub>
+<sub> Here is a look at a singular end event and a singular neutral event.</sub>\
 <img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Event_Recordings.png?raw=true" alt="Charts showing EEG recording for a neutral event vs. an end event" width="600"/>
 
 <sub> Here are the accuracies of our different classifiers and the confusion matrices to go along with them.</sub>
