@@ -3,7 +3,7 @@
 
 
 # Overview
-Our goal was to utilize EEG headsets provided by Mentalab to create a classifier for emotion. Over the course of two months, we were able to develop a support vector machine classifier that can detect anger using EEG waves at 71.6% accuracy.
+Our goal was to utilize EEG headsets provided by Mentalab to create a classifier for emotion. Over the course of two months, we were able to develop a support vector machine classifier and a multilayer perceptron classifer that can detect anger using EEG waves at 94.7% accuracy.
 
 ## Team:
 <b>Ilia Popov</b> - Project Lead\
@@ -36,11 +36,11 @@ To collect our data we used Mentalab's Explore EEG recording headset and softwar
 ## Analysis and Results
 Using the data we collected we analyzed neutral events, 4-second blocks of time during the game, to see how they compared to end events, 4-second blocks of time around when the player would lose a game. After filtering and processing our data we trained seven types of classifiers to see which would perform the best: SVM, Random Forest, Gradient Boosting, KNN, Naïve Bayes, Logistic Regression, and MLP. In the end, our SVM and MLP classifiers would yield the best accuracy with a 94.7% success rate in detecting anger based on a user's EEG waves.
 
-<img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Event_Recordings.png?raw=true" alt="Charts showing EEG recording for a neutral event vs. an end event" width="600"/>
 <sub> Here is a look at a singular end event and a singular neutral event.</sub>
+<img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Event_Recordings.png?raw=true" alt="Charts showing EEG recording for a neutral event vs. an end event" width="600"/>
 
-<img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Results.png?raw=true" alt="Classifier accurcies and confusion matrices" width="600"/>
 <sub> Here are the accuracies of our different classifiers and the confusion matrices to go along with them.</sub>
+<img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Results.png?raw=true" alt="Classifier accurcies and confusion matrices" width="600"/>
 
 ## Conclusion
 While our research was not as extravagant as we initially planned, this experience not only taught us a lot about the challenges researchers face in inducing emotion, but also demonstrates the capabilities of using EEG waves for emotion detection. This baseline research sets us up for further pursuance in the future as we will be better equipped to determine the mental state a person is in (volatile, indifferent). This research could be built upon to create technology that can detect the presence/absence of an undiagnosed mental condition, such as ADHD or depression.
