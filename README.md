@@ -34,9 +34,13 @@ To collect our data we used Mentalab's Explore EEG recording headset and softwar
 <img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Astrobird.png?raw=true" alt="Astrobird Get Ready screen" width="200"/>
 
 ## Analysis and Results
-Using the data we collected we analyzed neutral events, 4-second blocks of time during the game, to see how they compared to end events, 4-second blocks of time around when the player would lose a game. After filtering and processing our data we trained seven types of classifiers to see which would perform the best: SVM, Random Forest, Gradient Boosting, KNN, Naïve Bayes, Logistic Regression, and MLP. In the end, our SVM classifier would yield the best accuracy with a 71.6% success rate in detecting anger based on a user's EEG waves.
+Using the data we collected we analyzed neutral events, 4-second blocks of time during the game, to see how they compared to end events, 4-second blocks of time around when the player would lose a game. After filtering and processing our data we trained seven types of classifiers to see which would perform the best: SVM, Random Forest, Gradient Boosting, KNN, Naïve Bayes, Logistic Regression, and MLP. In the end, our SVM and MLP classifiers would yield the best accuracy with a 94.7% success rate in detecting anger based on a user's EEG waves.
 
 <img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Event_Recordings.png?raw=true" alt="Charts showing EEG recording for a neutral event vs. an end event" width="600"/>
+<sub> Here is a look at a singular end event and a singular neutral event.</sub>
+
+<img src="https://github.com/MyelinGroup/myelin-fuzzy-logic/blob/main/Images/Results.png?raw=true" alt="Classifier accurcies and confusion matrices" width="600"/>
+<sub> Here are the accuracies of our different classifiers and the confusion matrices to go along with them.</sub>
 
 ## Conclusion
 While our research was not as extravagant as we initially planned, this experience not only taught us a lot about the challenges researchers face in inducing emotion, but also demonstrates the capabilities of using EEG waves for emotion detection. This baseline research sets us up for further pursuance in the future as we will be better equipped to determine the mental state a person is in (volatile, indifferent). This research could be built upon to create technology that can detect the presence/absence of an undiagnosed mental condition, such as ADHD or depression.
